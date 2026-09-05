@@ -1,0 +1,57 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+
+# Model/checkpoint files
+*.pt
+*.pth
+*.weights
+*.onnx
+*.ckpt
+*.safetensors
+
+# Training outputs
+runs/
+wandb/
+tensorboard/
+logs/
+
+# Raw datasets
+data/raw/
+datasets/
+*.zip
+*.rar
+*.7z
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Secrets
+.env
+*.key
+*.pem
+credentials.json
+secrets.json

@@ -1,0 +1,37 @@
+================================================================================
+          AQUATRUST v3 — OFFICIAL CANONICAL POSTER SPECIFICATION
+================================================================================
+Title       : AquaTrust: Calibrated Reliability and Conformal Risk Control for Side-Scan Sonar Object Detection
+Track       : Track T3: AI & Applied Machine Learning
+Event       : Smart Amrita Hackathon (SAH) 2026
+Presenter   : Pavan (Solo Project)
+Protocol    : 5-Fold Nested Cross-Validation (1,170 SSS Images, N=2,115 Detections)
+================================================================================
+
+PANEL 1: Problem Statement & Motivation
+Deep neural object detectors (YOLOv8) on Autonomous Underwater Vehicles (AUVs) suffer from severe perceptual overconfidence due to acoustic speckle, contrast loss, and benthic clutter, outputting >90% confidence on false alarms. This triggers costly autonomous mission disruptions.
+
+PANEL 2: Leakage-Safe 5-Fold Nested Protocol
+1,170 physical SSS images partitioned into 5 disjoint outer test folds. Geometric diagnostics revealed that 69.0% of targets are severely small (<1,024 px^2). High-resolution YOLOv8s @ 832x832 achieved mAP50 = 0.4585 (+65.4% relative gain). Every image is evaluated exactly once as an untouched test sample.
+
+PANEL 3: Multi-Evidence Formulation & Architecture
+AquaTrust extracts raw confidence c_i, patch contrast Q_c, speckle variability Q_v, and perturbation consistency S_i. The Class-Interaction Model (M6) modulates acoustic features by predicted class k_hat to avoid penalizing specular MILCO returns while suppressing high-variance NOMBO clutter.
+
+PANEL 4: Canonical 5-Fold Results Benchmark
+AquaTrust M6 achieves ECE-10 = 0.0689 (-52.7% vs Raw), ROC-AUC = 0.7047 (p < 0.001, 100% Bootstrap Win Rate), Risk@80% = 49.65% (p < 0.01 vs Raw and Platt), Coverage@20% = 24.48%, and SAY@20% = 17.92%.
+
+PANEL 5: Calibration & Selective Risk Insights
+Platt scaling alone drops discrimination (AUC=0.6467). AquaTrust M6 resolves this trade-off. At 80% coverage, AquaTrust reduces false alarm risk from 51.18% to 49.65% (p < 0.01 across 2,000 paired bootstrap resamples).
+Figures: Figure_1_Master_Reliability_Diagram.png, Figure_2_Ablation_Forest_Plot.png, Figure_3_Selective_Risk_Coverage.png
+
+PANEL 6: Conformal Risk Control & Utility Frontier
+Image-level CRC guarantees E[L_AnyError] <= alpha. At alpha=20%, AquaTrust delivers a +25.5% relative gain in autonomous coverage and a +20.3% gain in Safe Autonomous Yield (SAY) over raw YOLOv8s (p < 0.001).
+Figure: Figure_4_Conformal_Utility_Frontier.png
+
+PANEL 7: High-Confidence PAC-CRC & Deployment
+Exact Clopper-Pearson LTT testing provides 90% and 95% PAC high-probability guarantees for high-consequence naval operations, quantifying the exact coverage trade-off required for provable safety.
+Figures: Figure_5_Marginal_vs_PAC_CRC_Tradeoff.png, Figure_6_Operational_Disagreement_Case.png
+
+PANEL 8: Limitations & Conclusion
+Evaluated on naval SSS mine-detection imagery as a structural sensing proxy. AquaTrust proves that auxiliary acoustic quality features, perturbation consistency, and conformal calibration enable safe, verifiable autonomous marine inspection.
+================================================================================

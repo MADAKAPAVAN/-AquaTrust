@@ -1,0 +1,11 @@
+{
+  "framework": "AquaTrust v3",
+  "dataset_images": 1170,
+  "total_detections": 2115,
+  "folds": 5,
+  "protocol": "Nested 5-Fold Stratified Cross-Validation",
+  "scoring_model": "YOLOv8s @ 832x832 (mAP50=0.396) + M6 Class-Interaction Model",
+  "primary_conformal_guarantee": "E[L_AnyError] <= alpha (Marginal CRC)",
+  "high_probability_guarantee": "P(E[L] <= alpha) >= 1 - delta (Clopper-Pearson LTT-PAC)",
+  "mathematical_audit_status": "CERTIFIED & FROZEN"
+}

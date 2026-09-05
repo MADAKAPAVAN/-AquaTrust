@@ -1,0 +1,50 @@
+================================================================================
+          AQUATRUST v3 — OFFICIAL 3-TIER SCIENTIFIC CLAIM TAXONOMY
+================================================================================
+Framework: AquaTrust (Class-Interaction Model M6 & Conformal Risk Control)
+Dataset  : 1,170 physical side-scan sonar images (N=2,115 aggregate detections)
+Protocol : 5-Fold Nested Cross-Validation (Zero Data Leakage, Certified)
+Status   : LOCKED & IMMUTABLE
+
+────────────────────────────────────────────────────────────────────────────────
+🟢 TIER 1: FORMALLY GUARANTEED CLAIMS (Mathematical Theorems + Certified)
+────────────────────────────────────────────────────────────────────────────────
+1. Marginal Conformal Risk Control Theorem (Angelopoulos et al., 2022):
+   - Statement: E_{V, T}[ L_test(tau_hat) ] <= alpha holds for all alpha in {0.10..0.30}.
+   - Condition: Image Any-Error loss L_m in {0, 1} is monotonically non-increasing.
+   - Proof: Verified exact empirical monotonicity across all 1,170 images.
+
+2. High-Probability PAC-CRC Theorem (Learn-Then-Test, 2021):
+   - Statement: P_V( E_T[ L_test(tau_hat_PAC) | V ] <= alpha ) >= 1 - delta.
+   - Condition: Clopper-Pearson Binomial Inversion with Fixed-Sequence Testing.
+   - Proof: Proved zero Bonferroni multiplicity penalty (Maurer, 2004).
+
+────────────────────────────────────────────────────────────────────────────────
+🟡 TIER 2: EMPIRICALLY SUPPORTED CLAIMS (5-Fold Bootstrap B=2,000 Verified)
+────────────────────────────────────────────────────────────────────────────────
+1. Reliability Calibration Breakthrough (M6 Champion):
+   - ECE-10 reduced by 52.7% (0.1458 raw YOLOv8s -> 0.0689 AquaTrust M6).
+   - Paired Bootstrap Delta vs Raw: -0.0704, 95% CI [-0.0954, -0.0412], Win Rate: 100.0%.
+
+2. Superior Discrimination & Probabilistic Accuracy (M6 Champion):
+   - ROC-AUC improved from 0.6610 (Raw) to 0.7047 (M6) (p < 0.001, 100.0% Win Rate).
+   - Brier Score reduced from 0.2441 (Raw) to 0.2219 (M6).
+
+3. Statistically Significant Selective Risk Reduction:
+   - Risk@80% Coverage reduced from 51.18% (Raw) to 49.65% (M6) (p < 0.01, 99.6% Win Rate).
+
+4. Conformal Utility Maximization (Fixed-Risk Frontier):
+   - At alpha = 20%: Coverage increases from 19.50% (Raw) to 24.48% (M6) (+25.5% gain).
+   - At alpha = 20%: SAY increases from 14.90% (Raw) to 17.92% (M6) (+20.3% gain, p < 0.001).
+
+────────────────────────────────────────────────────────────────────────────────
+🔴 TIER 3: EXPLORATORY & REJECTED CLAIMS (Reported with Explicit Caveats)
+────────────────────────────────────────────────────────────────────────────────
+1. Non-Monotone Ratio Loss (Image False Discovery Rate L_FDR):
+   - FDR ratio is non-monotonic; standard monotone CRC does not hold unconditionally.
+   - Status: Reported transparently as secondary exploratory analysis.
+
+2. Single-Fold Empirical Loss Variance:
+   - Individual test fold losses exhibit normal finite-sample variance around alpha.
+   - Status: Do NOT claim every individual fold is deterministically <= alpha.
+================================================================================

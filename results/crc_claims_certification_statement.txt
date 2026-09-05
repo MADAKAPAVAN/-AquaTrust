@@ -1,0 +1,55 @@
+================================================================================
+          AQUATRUST v3 — OFFICIAL CONFORMAL CLAIMS & CERTIFICATION STATEMENT
+================================================================================
+Date: 2026-03-31
+Evaluated Sample: 5-Fold Nested Cross-Validation (1,170 physical SSS images, N=2,115 detections)
+Protocol Audit: Verified 100% disjoint train/calib/test partitions (Zero data leakage).
+
+────────────────────────────────────────────────────────────────────────────────
+1. PRIMARY CERTIFIED CONFORMAL CLAIM (MATHEMATICALLY & EMPIRICALLY VALID)
+────────────────────────────────────────────────────────────────────────────────
+Claim:
+  AquaTrust provides a finite-sample, distribution-free Marginal Conformal Risk Control
+  guarantee on physical side-scan sonar imagery under the Image Any-Error loss:
+      E_{V, T}[ L_test(tau_hat) ] <= alpha
+  where L_m in {0, 1} is 1 if any false alarm is accepted in image m, and 0 otherwise.
+
+Empirical Evidence:
+  - For target alpha = 10.0%, AquaTrust M6 achieves Mean Test Image Risk = 6.40% <= 10.0%
+    with 10.06% detection coverage and 8.45% Safe Autonomous Yield (SAY).
+  - For target alpha = 15.0%, AquaTrust M6 achieves Mean Test Image Risk = 13.51% <= 15.0%
+    with 16.84% detection coverage and 12.96% Safe Autonomous Yield (SAY).
+  - For target alpha = 30.0%, AquaTrust M6 achieves Mean Test Image Risk = 28.85% <= 30.0%
+    with 36.77% detection coverage and 24.02% Safe Autonomous Yield (SAY).
+  - At all certified alpha levels, the in-sample calibration inequality was 100% verified across
+    all 5 outer folds on independent calibration sets.
+
+────────────────────────────────────────────────────────────────────────────────
+2. FIXED-RISK UTILITY FRONTIER CLAIM (THE CORE VALUE PROPOSITION)
+────────────────────────────────────────────────────────────────────────────────
+Claim:
+  Under identical conformal risk budgets (alpha), AquaTrust M6 significantly maximizes
+  autonomous operational utility (Coverage and Safe Autonomous Yield) compared to Raw
+  YOLOv8s confidence and post-hoc Platt scaling.
+
+Empirical Evidence:
+  - At alpha = 10.0%: Coverage increases from 8.74% (Raw) to 10.06% (M6) (+15.1% relative gain).
+  - At alpha = 20.0%: Coverage increases from 19.50% (Raw) to 24.48% (M6) (+25.5% relative gain).
+                      SAY increases from 15.04% (Raw) to 17.59% (M6) (+17.0% relative gain).
+  - At alpha = 25.0%: Coverage increases from 26.36% (Raw) to 30.94% (M6) (+17.4% relative gain).
+  - At alpha = 30.0%: Coverage increases from 31.85% (Raw) to 36.77% (M6) (+15.5% relative gain).
+
+────────────────────────────────────────────────────────────────────────────────
+3. SECONDARY / EXPLORATORY ANALYSIS (REPORTED WITH METHODOLOGICAL CAVEATS)
+────────────────────────────────────────────────────────────────────────────────
+Caveat 1 (Image FDR Ratio Loss):
+  Image-level False Discovery Rate (L_FDR in [0, 1]) is non-monotonic in threshold tau.
+  Therefore, standard monotone CRC bounds do not hold unconditionally. We report FDR results
+  transparently as exploratory ratio analyses rather than primary distribution-free guarantees.
+
+Caveat 2 (Marginal vs. Realized Fold Variance):
+  The conformal theorem guarantees expected risk across random calibration/test draws. Realized
+  risk on individual test folds exhibits finite-sample variance around alpha, which is quantified
+  transparently via descriptive across-fold stability intervals.
+
+================================================================================

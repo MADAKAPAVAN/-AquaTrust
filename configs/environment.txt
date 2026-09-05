@@ -1,0 +1,29 @@
+﻿# AquaTrust Experimental Environment
+
+Operating System:
+Windows 11
+
+Python:
+3.12
+
+PyTorch:
+2.7.1+cu118
+
+CUDA:
+11.8
+
+GPU:
+NVIDIA RTX 3070 8 GB
+
+NumPy:
+1.26.4
+
+Main libraries:
+- PyTorch
+- Ultralytics
+- NumPy
+- SciPy
+- pandas
+- scikit-learn
+- OpenCV
+- Matplotlib

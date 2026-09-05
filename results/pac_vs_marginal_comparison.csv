@@ -1,0 +1,37 @@
+Guarantee_Tier,Target_Alpha (%),Scoring_Model,Mean_Tau,Certification_Rate,Mean_Test_Risk,Mean_Coverage,Mean_SAY,Total_Hits,Total_False_Alarms
+Tier 1: Marginal CRC (E[L] <= alpha),15,M1: Raw YOLOv8s,0.47,1.0,8.37,14.16,11.69,244,52
+Tier 1: Marginal CRC (E[L] <= alpha),15,M2: Conf Platt Baseline,0.76,1.0,8.37,14.16,11.69,244,52
+Tier 1: Marginal CRC (E[L] <= alpha),15,M6: AquaTrust (Ours),0.78,1.0,10.15,14.45,11.58,240,60
+Tier 1: Marginal CRC (E[L] <= alpha),20,M1: Raw YOLOv8s,0.42,1.0,14.05,19.5,14.9,314,99
+Tier 1: Marginal CRC (E[L] <= alpha),20,M2: Conf Platt Baseline,0.7,1.0,14.05,19.5,14.9,314,99
+Tier 1: Marginal CRC (E[L] <= alpha),20,M6: AquaTrust (Ours),0.68,1.0,19.23,24.48,17.92,376,140
+Tier 1: Marginal CRC (E[L] <= alpha),25,M1: Raw YOLOv8s,0.37,1.0,21.47,26.36,18.54,389,166
+Tier 1: Marginal CRC (E[L] <= alpha),25,M2: Conf Platt Baseline,0.63,1.0,21.47,26.36,18.54,389,166
+Tier 1: Marginal CRC (E[L] <= alpha),25,M6: AquaTrust (Ours),0.63,1.0,25.16,30.94,21.45,448,201
+Tier 1: Marginal CRC (E[L] <= alpha),30,M1: Raw YOLOv8s,0.34,1.0,29.09,31.85,20.92,440,233
+Tier 1: Marginal CRC (E[L] <= alpha),30,M2: Conf Platt Baseline,0.59,1.0,29.09,31.85,20.92,440,233
+Tier 1: Marginal CRC (E[L] <= alpha),30,M6: AquaTrust (Ours),0.58,1.0,30.49,36.77,23.9,502,276
+Tier 2: PAC-CRC (90% Confidence),15,M1: Raw YOLOv8s,0.61,1.0,4.37,7.05,6.13,126,19
+Tier 2: PAC-CRC (90% Confidence),15,M2: Conf Platt Baseline,0.86,1.0,4.37,7.05,6.13,126,19
+Tier 2: PAC-CRC (90% Confidence),15,M6: AquaTrust (Ours),0.88,1.0,2.68,5.86,5.26,108,12
+Tier 2: PAC-CRC (90% Confidence),20,M1: Raw YOLOv8s,0.53,1.0,6.39,10.07,8.27,172,38
+Tier 2: PAC-CRC (90% Confidence),20,M2: Conf Platt Baseline,0.81,1.0,6.39,10.07,8.27,172,38
+Tier 2: PAC-CRC (90% Confidence),20,M6: AquaTrust (Ours),0.82,1.0,8.07,11.26,9.09,186,45
+Tier 2: PAC-CRC (90% Confidence),25,M1: Raw YOLOv8s,0.47,1.0,8.37,14.44,11.97,250,52
+Tier 2: PAC-CRC (90% Confidence),25,M2: Conf Platt Baseline,0.75,1.0,8.37,14.44,11.97,250,52
+Tier 2: PAC-CRC (90% Confidence),25,M6: AquaTrust (Ours),0.77,1.0,11.82,15.78,12.32,256,73
+Tier 2: PAC-CRC (90% Confidence),30,M1: Raw YOLOv8s,0.42,1.0,13.2,19.22,14.9,314,93
+Tier 2: PAC-CRC (90% Confidence),30,M2: Conf Platt Baseline,0.7,1.0,13.2,19.22,14.9,314,93
+Tier 2: PAC-CRC (90% Confidence),30,M6: AquaTrust (Ours),0.68,1.0,19.23,24.43,17.92,376,139
+Tier 2: PAC-CRC (95% Confidence),15,M1: Raw YOLOv8s,0.61,1.0,3.54,6.82,6.13,126,14
+Tier 2: PAC-CRC (95% Confidence),15,M2: Conf Platt Baseline,0.86,1.0,3.54,6.82,6.13,126,14
+Tier 2: PAC-CRC (95% Confidence),15,M6: AquaTrust (Ours),0.89,1.0,2.26,5.63,5.17,106,9
+Tier 2: PAC-CRC (95% Confidence),20,M1: Raw YOLOv8s,0.57,1.0,5.97,8.48,7.04,145,30
+Tier 2: PAC-CRC (95% Confidence),20,M2: Conf Platt Baseline,0.83,1.0,5.97,8.48,7.04,145,30
+Tier 2: PAC-CRC (95% Confidence),20,M6: AquaTrust (Ours),0.84,1.0,6.4,9.97,8.36,170,33
+Tier 2: PAC-CRC (95% Confidence),25,M1: Raw YOLOv8s,0.5,1.0,7.99,13.33,10.95,227,50
+Tier 2: PAC-CRC (95% Confidence),25,M2: Conf Platt Baseline,0.77,1.0,7.99,13.33,10.95,227,50
+Tier 2: PAC-CRC (95% Confidence),25,M6: AquaTrust (Ours),0.79,1.0,9.77,13.97,11.19,231,58
+Tier 2: PAC-CRC (95% Confidence),30,M1: Raw YOLOv8s,0.45,1.0,10.07,16.52,13.18,276,71
+Tier 2: PAC-CRC (95% Confidence),30,M2: Conf Platt Baseline,0.73,1.0,10.07,16.52,13.18,276,71
+Tier 2: PAC-CRC (95% Confidence),30,M6: AquaTrust (Ours),0.75,1.0,13.52,17.36,13.06,272,91

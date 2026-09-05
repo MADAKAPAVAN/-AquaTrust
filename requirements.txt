@@ -1,0 +1,8 @@
+﻿numpy==1.26.4
+pandas
+scipy
+scikit-learn
+matplotlib
+opencv-python
+torch==2.7.1
+ultralytics

@@ -1,0 +1,4 @@
+﻿cff-version: 1.2.0
+title: "AquaTrust: Calibrated Reliability and Conformal Risk Control for Side-Scan Sonar Object Detection"
+message: "If you use this repository, please cite the associated AquaTrust work."
+type: software

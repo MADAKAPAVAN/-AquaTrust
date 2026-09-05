@@ -1,0 +1,6 @@
+Fold,Train_Images,Val_Images,Test_Images,Train_Val_Overlap,Train_Test_Overlap,Val_Test_Overlap,Partition_Integrity
+1,819,117,234,0,0,0,✅ 100% DISJOINT & VERIFIED
+2,819,117,234,0,0,0,✅ 100% DISJOINT & VERIFIED
+3,819,117,234,0,0,0,✅ 100% DISJOINT & VERIFIED
+4,819,117,234,0,0,0,✅ 100% DISJOINT & VERIFIED
+5,819,117,234,0,0,0,✅ 100% DISJOINT & VERIFIED
