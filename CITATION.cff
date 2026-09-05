@@ -1,4 +1,32 @@
-﻿cff-version: 1.2.0
+cff-version: 1.2.0
 title: "AquaTrust: Calibrated Reliability and Conformal Risk Control for Side-Scan Sonar Object Detection"
-message: "If you use this repository, please cite the associated AquaTrust work."
+message: "If you use this software, code, figures, or results in your research, please cite this repository."
 type: software
+
+authors:
+  - family-names: "Madaka"
+    given-names: "Pavan Kalyan"
+
+version: "1.0.0"
+date-released: "2026-09-05"
+
+repository-code: "https://github.com/MADAKAPAVAN/-AquaTrust"
+repository-artifact: "https://github.com/MADAKAPAVAN/-AquaTrust"
+
+license: "MIT"
+
+keywords:
+  - "side-scan sonar"
+  - "object detection"
+  - "YOLOv8"
+  - "confidence calibration"
+  - "reliability"
+  - "conformal risk control"
+  - "selective prediction"
+  - "underwater AI"
+
+abstract: >
+  AquaTrust is a reliability-aware decision framework for side-scan sonar
+  object detection. It augments detector confidence with auxiliary evidence,
+  calibrated reliability estimation, and conformal risk control to support
+  risk-aware autonomous acceptance or human review.
