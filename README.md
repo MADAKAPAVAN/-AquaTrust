@@ -33,7 +33,10 @@ The underlying side-scan sonar dataset is from Santos et al. (2024) and is avail
 The repository contains the curated code, configurations, figures, results, and documentation required to understand the reported experiments. Raw dataset archives and trained checkpoints are intentionally not included.
 
 ## Citation
-See CITATION.cff for the repository citation metadata.
+[1] G. Jocher, A. Chaurasia, and J. Qiu, "Ultralytics YOLOv8," Ultralytics, 2023.
+[2] S. Kuzucu, K. Oksuz, J. Sadeghi, and P. K. Dokania, "On calibration of object detectors: Pitfalls, evaluation and baselines," in Proc. Eur. Conf. Comput. Vis. (ECCV), 2024.
+[3] A. N. Angelopoulos, S. Bates, A. Fisch, L. Lei, and T. Schuster, "Conformal risk control," in Proc. Int. Conf. Learn. Represent. (ICLR), 2024.
+[4] A. N. Angelopoulos and S. Bates, "Conformal prediction: A gentle introduction," Found. Trends Mach. Learn., vol. 16, no. 4, pp. 494–591, 2023.
 
 ## License
 See LICENSE for licensing information.
